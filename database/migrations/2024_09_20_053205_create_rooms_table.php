@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('rooms', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('roomid');
+            $table->foreignId('roomstypeid');
+            $table->integer('roomnumber');
+   
         });
     }
 

@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\ReservesController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/guest', 'GuestController@index');
+// Route::get('/post/create', [PostController::class, 'create']);
+
+Route::get('/guest', [GuestController::class,'index']);
+Route::get('/reserve', [ReservesController::class, 'index']);

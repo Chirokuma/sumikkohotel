@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -36,7 +35,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Sumikko Hotel</h1>
@@ -45,10 +43,6 @@
                 <li><a href="/guest">利用者一覧</a></li>
                 <li><a href="/reserve">予約一覧</a></li>
             </ul>
-            <ul class="main-nav">
-                <li><a href="/guest/add">利用者一覧</a></li>
-                <li><a href="/reserve/add">予約一覧</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -56,5 +50,4 @@
         @yield('body')
     </body>
 </body>
-
 </html>

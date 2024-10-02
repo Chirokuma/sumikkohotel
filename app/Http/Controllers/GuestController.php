@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Guest;
+use App\Models\Guest;
 
 class GuestController extends Controller
 {
@@ -11,6 +11,6 @@ class GuestController extends Controller
     {
         $guests = Guest::all();
 
-        return view('guest.index', ['guests' => $guests]);
+        return view('guest.index', compact('guests'));
     }
 }
