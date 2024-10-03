@@ -14,7 +14,7 @@ class ReservesTableSeeder extends Seeder
     public function run(): void
     {
         $param = [
-            'reserve_id' => '',
+            'reserve_id' => '1000',
             'guest_id' => '1',
             'person' => '1',
             'checkin' => '20241224',

@@ -23,11 +23,20 @@ class GuestsTableSeeder extends Seeder
 
         $param = [
             'guest_id' => '2',
-            'name' => 'ねこ',
-            'address' => '兵庫県西宮市',
+            'name' => 'ぺんぎん？',
+            'address' => '兵庫県神戸市',
             'tel' => '090-5555-5555'
         ];
         DB::table('guests')->insert($param);
+
+        $param = [
+            'guest_id' => '3',
+            'name' => 'ねこ',
+            'address' => '兵庫県西宮市',
+            'tel' => '090-2828-2828'
+        ];
+        DB::table('guests')->insert($param);
+
 
         
     }
