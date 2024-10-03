@@ -11,7 +11,6 @@ class RoomsController extends Controller
     {
         $rooms = Rooms::all();
 
-        return view(
-        'layouts.Rooms', compact('Rooms'));
+        return view('layouts.Rooms', compact('Rooms'));
     }
 }
