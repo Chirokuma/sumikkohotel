@@ -12,13 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('rooms', function (Blueprint $table) {
-            $table->id('roomid');
-            $table->foreignId('roomstypeid');
-            $table->integer('roomnumber');
-   
+            $table->id('room_id');
+            $table->foreignId('room_type_id');
+            $table->integer('room_number');
         });
     }
-
     /**
      * Reverse the migrations.
      */

@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,8 +11,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('rooms_type', function (Blueprint $table) {
-            $table->id('roomstypeid');
-            $table->string('roomname');
+            $table->id('room_type_id');
+            $table->foreignId('room_id');
+            $table->String('room_name');
+            $table->string('bed_type');
             $table->integer('capacity');
         });
     }

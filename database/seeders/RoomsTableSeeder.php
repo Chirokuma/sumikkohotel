@@ -14,18 +14,13 @@ class RoomsTableSeeder extends Seeder
     public function run(): void
     {
         $param = [
-            'roomnumber' => '101',
-        ];
-        DB::table('guests')->insert($param);
+            'room_type_id' => '',
+            'room_number' => '101',
+            'room_number' => '101',
+            'room_number' => '101',
 
-        $param = [
-            'roomnumber' => '102',
         ];
-        DB::table('guests')->insert($param);
+        DB::table('Rooms')->insert($param);
 
-        $param = [
-            'roomnumber' => '103',
-        ];
-        DB::table('guests')->insert($param);
-    }
+           }
 }

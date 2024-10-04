@@ -14,10 +14,12 @@ class ReservesDetailTableSeeder extends Seeder
     public function run(): void
     {
         $param = [
-            'capacity'
-            'date' => '',
-            'price' => '',
+            'reservation_details_id' => '',
+            'reservation_id' => '',
+            'room_id' => '101',
+            'date' => '20241224'
+            'price' => '10000'
         ];
-        DB::table('guests')->insert($param);
+        DB::table('reserves')->insert($param);
     }
 }

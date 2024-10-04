@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -10,10 +9,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reserves', function (Blueprint $table) {
-            $table->id('reserve_id');
+        Schema::create('reservations', function (Blueprint $table) {
+            $table->id('reservation_id');
             $table->foreignId('guest_id');
-            $table->integer('person');
+            $table->integer('number_of_guests');
             $table->dateTime('checkin');
             $table->dateTime('checkout');
         });
@@ -23,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reserves');
+        Schema::dropIfExists('reservations');
     }
 };
