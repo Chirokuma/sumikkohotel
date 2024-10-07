@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
         <header id="top">
-        <h1><a href="index.html"><img src="images/sumitop2" alt="すみっコホテル"></a></h1>
+        <h1><a href="index.html"><img src="app\database\images\sumitop2.jpg" alt="すみっコホテル"></a></h1>
     </header>
     <style>
         body {
@@ -45,9 +45,8 @@
         <h1>Sumikko Hotel</h1>
         <nav>
             <ul class="main-nav">
-                <li id="nav_guest"><a href="/guest">Guests</a></li>
-                <li id="nav_reserves"><a href="/reserve">Reserves</a></li>
-                 <li id="nav_rooms"><a href="/rooms">Rooms</a></li>
+                <li id="nav_Reservation"><a href="/reserve">Reserve</a></li>
+                 <li id="nav_room"><a href="/rooms">Rooms</a></li>
             </ul>
         </nav>
     </header>

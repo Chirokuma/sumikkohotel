@@ -9,8 +9,8 @@ class GuestController extends Controller
 {
     public function index()
     {
-        $guests = Guest::all();
+        $guest = Guest::all();
 
-        return view('guest.index', compact('guests'));
+        return view('guest.index', compact('guest'));
     }
 }

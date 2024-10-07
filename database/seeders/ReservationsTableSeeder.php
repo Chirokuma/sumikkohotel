@@ -1,11 +1,8 @@
 <?php
-
 namespace Database\Seeders;
-
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-
 class ReservesTableSeeder extends Seeder
 {
     /**
@@ -29,7 +26,7 @@ class ReservesTableSeeder extends Seeder
             'checkin' => '20241101',
             'checkout' => '20241102'
         ];
-        DB::table('Reservations')->insert($param);
+        DB::table('reservations')->insert($param);
 
     }
 }

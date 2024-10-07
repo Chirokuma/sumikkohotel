@@ -12,7 +12,6 @@ return new class extends Migration
     {
         Schema::create('rooms_type', function (Blueprint $table) {
             $table->id('room_type_id');
-            $table->foreignId('room_id');
             $table->String('room_name');
             $table->string('bed_type');
             $table->integer('capacity');
